@@ -265,7 +265,3 @@ Here is how the project is structured:
 * **/app**: Interfaces, classes, application starting point and the file containing the operations to be processed
 * **/tests**: Unit and integration (system) tests and reports
 * **/resources**: Configuration files and tooling scripts
-
-## Thanks
-
-That's all folks!
