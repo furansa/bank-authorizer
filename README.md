@@ -1,7 +1,7 @@
-# Authorizer
+# Bank Authorizer
 
-Authorizer is an application which receive, process and authorize bank account
-operations by using a pre-defined set of rules.
+Bank Authorizer is an application which receive, process and authorize bank
+account operations by using a pre-defined set of rules.
 
 The events comes from the STDIN in a form of a stream of data to be processed
 one by one and then returned to the STDOUT.
