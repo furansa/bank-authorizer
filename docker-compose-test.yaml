@@ -1,0 +1,27 @@
+version: "3.7"
+
+services:
+    authorizer:
+        environment:
+            - APP_DEBUG_MODE=False
+            - APP_TEST_MODE=True
+            - APP_VERSION=0.0.1
+            - SPEC_DIR=./resources
+            - PYTHONUNBUFFERED=1
+        container_name: authorizer
+        image: autorizer:test
+        build:
+            context: ./resources
+            args:
+            - PIP_OPTIONS=--dev --skip-lock --system
+            - IMAGE_DESCRIPTION=Bank authorizer application, test image
+        networks:
+            - authorizer_public
+        volumes:
+            - ./app:/app
+            - ./tests:/tests
+            - ./resources/entrypoint.sh:/tmp/entrypoint.sh:ro
+
+networks:
+    authorizer_public:
+        name: authorizer_public

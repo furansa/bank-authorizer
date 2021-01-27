@@ -1,0 +1,3 @@
+{"account": {"active-card": true, "available-limit": 100}}
+{"transaction": {"merchant": "Habbib's", "amount": 50, "time": "2019-02-13T10:00:00.000Z"}}
+{"transaction": {"merchant": "KFC", "amount": 100, "time": "2019-02-13T10:10:00.000Z"}}
